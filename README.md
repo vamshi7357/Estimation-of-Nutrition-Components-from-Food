@@ -133,5 +133,5 @@ This project is MIT Licensed – Free to use & modify!
 
 ## Contact
 For any queries regarding the application, please contact:
-- Email: prabas.paddana@gmail.com
-- GitHub: https://github.com/prabhaspaddana
+- Email: vamshikrishnavadlakonda24@gmail.com
+- GitHub: https://github.com/vamshi7357
