@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f0f0f0, #d9e7ff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* App Title */
+.app-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0056b3;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Main Container - Ensuring Full Page Center Alignment */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center everything vertically */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Upload Section */
+.upload-container {
+  width: 90%;
+  max-width: 550px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  margin: 20px auto; /* Centering horizontally */
+  text-align: center;
+}
+
+/* Custom File Upload Button */
+.upload-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Hide default file input */
+.file-input {
+  display: none;
+}
+
+/* Styled Button */
+.upload-btn, .styled-btn, .custom-file-upload, .analyze-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 15px auto; /* Centering buttons */
+}
+
+/* Button Icon */
+.upload-btn i, .styled-btn i, .custom-file-upload i, .analyze-btn i {
+  margin-right: 8px;
+}
+
+/* Button Hover Effect */
+.upload-btn:hover, 
+.styled-btn:hover, 
+.custom-file-upload:hover, 
+.analyze-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #0041a3);
+  padding: 14px 26px;  /* Slightly increasing padding on hover */
+  transform: scale(1.05);
+}
+
+/* Image Preview */
+.image-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Error Messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Center File Selection Button */
+input[type="file"]::file-selector-button {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+/* Nutrition Analysis Section */
+.nutrition-container {
+  width: 90%;
+  max-width: 800px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 25px auto;
+  text-align: center;
+}
+
+/* Food Description */
+.food-description {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 5px;
+  text-align: justify; /* Align text to the left */
+}
+
+/* Nutrition Values Grid */
+.nutrition-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nutrition-item {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+  font-weight: bold;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.nutrition-item:hover {
+  transform: scale(1.05);
+  background: #eef4ff;
+}
+
+/* Center Buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nutrition-item {
+    width: 100%;
+  }
+}
+
+/* Custom File Upload Button */
+.custom-file-upload {
+  width: 220px; /* Match width of other buttons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.custom-file-upload:hover {
+  background: linear-gradient(135deg, #0056b3, #0041a3);
+  transform: scale(1.05);
+}
+
+/* Hide default file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Adjusting Text Alignment for Readability */
+.text-content {
+  text-align: justify;
+  max-width: 600px;
+  margin: auto;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Improved Button Spacing */
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Consistent Button Styles */
+.upload-btn, .analyze-btn, .custom-file-upload {
+  width: 230px;
+}
+
+/* Larger Screens */
+@media (min-width: 1024px) {
+  .upload-container {
+    max-width: 600px;
+  }
+  
+  .nutrition-container {
+    max-width: 850px;
+  }
+}
